@@ -1,34 +1,28 @@
+import { useTranslations } from "next-intl";
+
 const Shipping = () => {
+  const t = useTranslations();
   return (
     <section id="shipping" className="pt-24">
       <div className="lg:w-10/12 font-medium lg:text-xl">
         <h1 className="lg:text-4xl text-3xl font-extrabold">
-          Доставка и оплата.{" "}
-          <span className="text-gray-500">Товаров и услуг.</span>
+          {t("navbar.shipping")}.{" "}
+          <span className="text-gray-500">
+            {t("shippingAndPayment.productAndService")}
+          </span>
         </h1>
+        <p className="my-5">{t("shippingAndPayment.logistics")}</p>
+        <p>{t("shippingAndPayment.paymentMethods")}</p>
         <p className="my-5">
-          Мы обеспечиваем отработанные логистические цепочки поставок напрямую
-          от поставщиков. Свой склад в Ташкенте, курьеры и транспорт позволят
-          сократить время доставки.
-        </p>
-        <p>Вы можете выбрать один из двух вариантов оплаты:</p>
-        <p className="my-5">
-          Оплата наличными
+          {t("shippingAndPayment.cashPayment")}
           <br />
-          При выборе варианта оплаты наличными, вы дожидаетесь приезда курьера и
-          передаёте ему сумму за товар в рублях. Курьер предоставляет товар,
-          который можно осмотреть на предмет повреждений, соответствие указанным
-          условиям. Покупатель подписывает товаросопроводительные документы,
-          вносит денежные средства и получает чек.
+          {t("shippingAndPayment.cashPaymentProcess")}
         </p>
-        <p>
-          Также оплата наличными доступна при самовывозе из магазина, оплаты по
-          почте или использовании постамата.
-        </p>
+        <p>{t("shippingAndPayment.advantageOfPayingWitchCash")}</p>
         <p className="mt-5">
-          Безналичный расчёт
+          {t("shippingAndPayment.cashlessPayments")}
           <br />
-          Мы принимаем карты Visa и Master Card.
+          {t("shippingAndPayment.visaAndMasterCard")}
         </p>
       </div>
     </section>

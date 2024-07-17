@@ -1,0 +1,91 @@
+{
+  "navbar": {
+    "hotels": "Mehmonxona",
+    "restaurants": "Restoran",
+    "services": "Xizmatlar",
+    "shipping": "Yetkazish va to'lash",
+    "contacts": "Aloqa"
+  },
+  "hero": {
+    "title": "HORECA UCHUN B2B MARKETPLEYS O'ZBEKISTONDA",
+    "inUzb": "O'ZBEKISTONDA",
+    "description": "Bu yerda siz sifatli mahsulotlarni yetakchi ishlab chiqaruvchilardan to'g'ridan-to'g'ri va aniq yetkazib berish muddatlari bilan arzon narxlarda sotib olishingiz mumkin",
+    "button": "Buyurtma berish"
+  },
+  "hotelInConstruction": {
+    "newConstruction": "Yangi qurilayotgan.",
+    "ourB2Bplatform": "Bizning B2B saytimizda siz xalqaro mehmonxona brendlari tomonidan har qanday miqyosdagi va yulduzli loyihalar uchun akkreditatsiyadan o'tgan mahsulotlarni xarid qilishingiz mumkin.",
+    "offer": "Biz quyidagi yetakchi yetkazib beruvchilarni taklif etamiz:",
+    "FF&OS": "FF&E va OS&E",
+    "engineeringSystems": "Muhandislik tizimlari",
+    "equipmentForRestaurants": "Restoran va barlar uchun uskunalar",
+    "laundryEquipment": "Kir yuvish uskunalari",
+    "optimizingUtilityCosts": "Kommunal xarajatlarni optimallashtirish tizimlari",
+    "ITEquipment": "IT-uskunalari va dasturiy ta'minot"
+  },
+  "hotelInOperation": {
+    "inOperation": "Faoliyatdagi.",
+    "offer": "Agar siz 100 xonali butik-mehmonxona yoki 100 xonadan ortiq to'liq siklli mehmonxona bo'lsangiz, bizning maydonchamizda quyidagi mehmonxona xizmatingiz uchun xalqaro mehmonxona brendlari tomonidan akkreditatsiyadan o'tgan mahsulotlarni sotib olishingiz mumkin:",
+    "receptionService": "Qabul va joylashtirish xizmati",
+    "housekeeping": "Xo'jalik xizmati yoki xona fondini ekspluatatsiya qilish xizmati",
+    "engineeringService": "Muhandislik xizmati",
+    "foodService": "Oziq-ovqat xizmati",
+    "securityService": "Xavfsizlik xizmati"
+  },
+  "restaurantsAndBars": {
+    "title": "Restoran va barlar.",
+    "inOperationAndConstruction": "Qurilayotgan va faoliyatdagi.",
+    "offer": "Bizning maydonchamizda siz restoran biznesi uchun professional uskunalarni sotib olishingiz mumkin.",
+    "hygieneAndConsumables": "Gigiena va sarflanadigan materiallar",
+    "cleaningEquipment": "Tozalash uskunalari va professional kimyo",
+    "packaging": "Bir martalik idishlar va qadoqlash",
+    "makeARequestNow": "Hozir so'rov qiling va buyurtma berish uchun mahsulotlar narxlari katalogini oling."
+  },
+  "services": {
+    "forHotelAndRestaurantBusiness": "Mehmonxona va restoran biznesi uchun.",
+    "offer": "Biz quyidagi xizmatlarni taqdim eta olamiz:",
+    "hotelConsultantForMarketResearch": "Bozor tadqiqoti uchun xalqaro mehmonxona maslahatchisini tanlash",
+    "architectForTheProject": "Loyiha uchun arxitektor tanlash",
+    "accreditedInteriorDesigners": "Akkreditatsiyadan o'tgan interyer dizaynerlarini tanlash",
+    "technicalConsultantForProjectManager": "Loyiha uchun texnik maslahatchini tanlash (loyiha menejeri)",
+    "specializedConsultants": "Maxsus maslahatchilarni tanlash (yong'in xavfsizligi, ovoz izolyatsiyasi, oshxona texnologiyasi va boshqalar bo'yicha)",
+    "managementCompanies": "Boshqaruvchi kompaniyalarni tanlash",
+    "generalManagerSelection": "Bosh menejerni tanlash",
+    "selectionAndNegotiations": "Xalqaro mehmonxona brendlari bilan tanlash va muzokaralar olib borish",
+    "trainings": "Mehmonxona, restoran yoki bar xodimlari uchun \"a la carte\" treninglari (daromadni boshqarish va boshqalar)"
+  },
+  "shippingAndPayment": {
+    "productAndService": "Mahsulotlar va xizmatlar.",
+    "logistics": "Biz yetkazib berish zanjirlarini yetkazib beruvchilardan to'g'ridan-to'g'ri ta'minlaymiz. Toshkentdagi omborimiz, kuryerlar va transport yetkazib berish vaqtini qisqartirishga imkon beradi.",
+    "paymentMethods": "To'lov uchun ikki variantdan birini tanlashingiz mumkin:",
+    "cashPayment": "Naqd pul bilan to'lash",
+    "cashPaymentProcess": "Naqd pul bilan to'lash variantini tanlashda siz kuryer kelishini kutasiz va unga mahsulot uchun summani rublda berasiz. Kuryer mahsulotni taqdim etadi, uni shikastlanish va ko'rsatilgan shartlarga muvofiqligini tekshirish mumkin. Xaridor tovarni kuzatuv hujjatlarini imzolaydi, pul mablag'larini kiritadi va chekni oladi.",
+    "advantageOfPayingWitchCash": "Shuningdek, naqd pul bilan to'lash do'kondan olib ketishda, pochta orqali to'lashda yoki poshta orqali to'lashda mavjud.",
+    "cashlessPayments": "Naqd pulsiz hisob-kitob",
+    "visaAndMasterCard": "Biz Visa va Master Card kartalarini qabul qilamiz."
+  },
+  "contacts": {
+    "contactUsToday": "Biz bilan bugunoq bog'laning.",
+    "FIO": "FISH",
+    "phone": "Telefon",
+    "email": "Email",
+    "yourRequest": "Sizning so'rovingiz",
+    "send": "Yuborish",
+    "address": "Manzil",
+    "locattion": "O'zbekiston, 100100, Toshkent, Yakkasaroy tumani, Bobur ko'chasi 34",
+    "workOur": "Ish vaqti",
+    "mondayToFriday": "Biz siz uchun dushanbadan jumagacha soat 09:00 dan 18:00 gacha ishlaymiz"
+  },
+  "footer": {
+    "allRightsReserved": "Barcha huquqlar himoyalangan",
+    "personalDataPolicy": "Shaxsiy ma'lumotlar siyosati"
+  },
+  "swal": {
+    "success": "Muvaffaqiyatli!",
+    "successText": "Xabar muvaffaqiyatli yuborildi",
+    "error": "Xato!",
+    "errorText": "Xabar yuborilmadi"
+  },
+  "fireProtectionSystems": "Yong'inga qarshi tizimlar, uskunalar va mebel",
+  "motto": "HORECA biznesingizni ishonchli hamkor bilan rivojlantiring. Hozir so'rov qiling va buyurtma berish uchun mahsulotlar narxlari katalogini oling."
+}

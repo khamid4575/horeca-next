@@ -1,29 +1,30 @@
+import { useTranslations } from "next-intl";
+
 const HotelInConstruction = () => {
+  const t = useTranslations("");
   return (
     <section id="hotels" className="pt-24">
       <div className="lg:w-1/2 font-medium lg:text-xl">
         <h1 className="lg:text-4xl text-3xl font-extrabold">
-          Отели. <span className="text-gray-500">Новое строительство.</span>
+          {t("navbar.hotels")}.{" "}
+          <span className="text-gray-500">
+            {t("hotelInConstruction.newConstruction")}
+          </span>
         </h1>
         <p className="font-medium my-5">
-          На нашей B2B-площадке вы сможете приобрести товары, которые
-          аккредитованы международными гостиничными брендами для проектов любого
-          масштаба и звездности.
+          {t("hotelInConstruction.ourB2Bplatform")}
         </p>
-        <p className="font-medium">Мы представляем ведущих поставщиков для:</p>
+        <p className="font-medium">{t("hotelInConstruction.offer")}</p>
         <ul className="mb-5 list-disc list-inside">
-          <li>FF&E и OS&E</li>
-          <li>Инженерных систем</li>
-          <li>Противопожарных систем, оборудования и мебели</li>
-          <li>Оборудования для ресторанов и баров</li>
-          <li>Оборудования для прачечных</li>
-          <li>Систем для оптимизации коммунальных расходов</li>
-          <li>ИТ-оборудования и программного обеспечения</li>
+          <li>{t("hotelInConstruction.FF&OS")}</li>
+          <li>{t("hotelInConstruction.engineeringSystems")}</li>
+          <li>{t("fireProtectionSystems")}</li>
+          <li>{t("hotelInConstruction.equipmentForRestaurants")}</li>
+          <li>{t("hotelInConstruction.laundryEquipment")}</li>
+          <li>{t("hotelInConstruction.optimizingUtilityCosts")}</li>
+          <li>{t("hotelInConstruction.ITEquipment")}</li>
         </ul>
-        <p>
-          Развивайте свой бизнес в HORECA с надежным партнером. Сделайте запрос
-          уже сейчас и получите каталог с расценками на товары для заказа.
-        </p>
+        <p>{t("motto")}</p>
       </div>
       <div></div>
     </section>
