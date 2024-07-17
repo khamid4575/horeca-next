@@ -1,7 +1,6 @@
 import Contacts from "@/components/Contacts";
 import ScrollToTopIcon from "@/components/customUI/ScrollToTopIcon";
 import Footer from "@/components/Footer";
-import Header from "@/components/header";
 import Hero from "@/components/Hero";
 import HotelInActive from "@/components/HotelInActive";
 import HotelInConstruction from "@/components/HotelInConstruction";
