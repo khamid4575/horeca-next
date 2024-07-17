@@ -1,8 +1,8 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
-import { useRef, useState, useTransition } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect, useRef, useState, useTransition } from "react";
 import Flag from "react-flagkit";
 
 const languages = [
@@ -14,7 +14,8 @@ const LanguageSelector = () => {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const localActive = useLocale();
-  const pathname = usePathname();
+  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
+  const languageDropdownRef = useRef<HTMLDivElement | null>(null);
 
   const onSelectChange = (newLanguage: any) => {
     startTransition(() => {
@@ -22,33 +23,24 @@ const LanguageSelector = () => {
     });
   };
 
-  // const { t, i18n } = useTranslation("global");
-  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
-  const languageDropdownRef = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        languageDropdownRef.current &&
+        !languageDropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsLanguageDropdownOpen(false);
+      }
+    };
 
-  //   useEffect(() => {
-  //     document.addEventListener("mousedown", handleClickOutside);
-  //     return () => {
-  //       document.removeEventListener("mousedown", handleClickOutside);
-  //     };
-  //   }, []);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const toggleLanguageDropdown = () => {
     setIsLanguageDropdownOpen(!isLanguageDropdownOpen);
-  };
-
-  //   const handleClickOutside = (event: { target: any; }) => {
-  //     if (
-  //       languageDropdownRef.current &&
-  //       !languageDropdownRef.current.contains(event.target)
-  //     ) {
-  //       setIsLanguageDropdownOpen(false);
-  //     }
-  //   };
-
-  const handleLanguageChange = (newLang: any) => {
-    // i18n.changeLanguage(newLang);
-    setIsLanguageDropdownOpen(false);
   };
 
   return (
@@ -57,8 +49,8 @@ const LanguageSelector = () => {
         onClick={toggleLanguageDropdown}
         className="flex items-center text-white rounded"
       >
-        {pathname === "/ru" && <Flag country="RU" className="w-10" />}
-        {pathname === "/uz" && <Flag country="UZ" className="w-10" />}
+        {localActive === "ru" && <Flag country="RU" className="w-10" />}
+        {localActive === "uz" && <Flag country="UZ" className="w-10" />}
       </button>
       {isLanguageDropdownOpen && (
         <div className="absolute lg:right-0 2xl:mt-5 z-50 mt-4 w-28 lg:bg-white rounded lg:shadow-lg">
@@ -66,7 +58,6 @@ const LanguageSelector = () => {
             <li
               key={language.code}
               onClick={() => onSelectChange(language.code)}
-              //   disabled={isPending}
               className="flex font-medium items-center px-3 py-2 cursor-pointer rounded text-white lg:text-gray-500 hover:bg-gray-200 hover:text-black"
             >
               <Flag country={language.country} className="mr-2" />
@@ -78,5 +69,4 @@ const LanguageSelector = () => {
     </div>
   );
 };
-
 export default LanguageSelector;

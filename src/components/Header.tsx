@@ -34,7 +34,7 @@ const Header = () => {
           Supply partners
         </Link>
         <div className="hidden lg:flex">
-          <Nav />
+          <Nav isScrolled={isScrolled} />
         </div>
         <div className="lg:hidden">
           <MobileNav isScrolled={isScrolled} />

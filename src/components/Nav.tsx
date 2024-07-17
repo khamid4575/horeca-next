@@ -1,9 +1,7 @@
-// "use client";
-
 import { useTranslations } from "next-intl";
 import LanguageSelector from "./customUI/LanguageSelector";
 
-const Nav = () => {
+const Nav = ({ isScrolled }: any) => {
   const t = useTranslations("navbar");
 
   const links = [
@@ -25,9 +23,11 @@ const Nav = () => {
           {link.name}
         </a>
       ))}
-      <h1 className="ml-12">
-        <LanguageSelector />
-      </h1>
+      {!isScrolled && (
+        <div className={`ml-12 ${isScrolled && "hidden"}`}>
+          <LanguageSelector />
+        </div>
+      )}
     </div>
   );
 };
