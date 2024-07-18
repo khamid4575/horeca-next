@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
 
 const Contacts = () => {
-  const t = useTranslations()
+  const t = useTranslations();
   const [formData, setFormData] = useState({
     email: "",
     fullname: "",
@@ -48,25 +48,19 @@ const Contacts = () => {
       return;
     }
 
-    const text = `Email: ${email}\nFull Name: ${fullname}\nPhone Number: ${phoneNumber}\nMessage: ${message}`;
-
     try {
-      return;
       const response = await fetch("/api/sendMessage", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          chat_id: "-1002159191350",
-          text: text,
-        }),
+        body: JSON.stringify({ email, fullname, phoneNumber, message }),
       });
 
       if (response.ok) {
         Swal.fire({
-          title: "swal.success",
-          text: "swal.successText",
+          title: t("swal.success"),
+          text: t("swal.successText"),
           icon: "success",
           confirmButtonText: "OK",
         });
@@ -79,8 +73,8 @@ const Contacts = () => {
       } else {
         console.log(response);
         Swal.fire({
-          title: "swal.error",
-          text: "swal.errorText",
+          title: t("swal.error"),
+          text: t("swal.errorText"),
           icon: "error",
           confirmButtonText: "OK",
         });
