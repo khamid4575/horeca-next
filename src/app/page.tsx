@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://horeca-seo.vercel.app"),
-  keywords: ["supply partners", "horeca", "restaurants", "bars", "hotels"],
+  keywords: ["supply partners", "horeca", "restaurants", "hotels"],
   title: "Supply Partners",
   description: "Ваш деловой партнер",
 };
