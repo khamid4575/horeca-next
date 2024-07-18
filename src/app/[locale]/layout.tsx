@@ -6,13 +6,13 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://horeca-seo.vercel.app"),
   keywords: ["supply partners", "horeca", "restaurants", "hotels"],
-  // alternates: {
-  //   canonical: '/',
-  //   languages: {
-  //     'ru-RU': '/ru',
-  //     'uz-UZ': '/uz',
-  //   },
-  // },
+  alternates: {
+    canonical: "/",
+    languages: {
+      ru: "/ru",
+      uz: "/uz",
+    },
+  },
   title: {
     default: "Supply Partners",
     template: "%s | Supply Partners",
@@ -41,6 +41,8 @@ export default async function RootLayout({
     <html lang={locale}>
       <head>
         <link rel="icon" href="/SP.png" />
+        <link rel="alternate" hrefLang="ru" href="/ru" />
+        <link rel="alternate" hrefLang="uz" href="/uz" />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
