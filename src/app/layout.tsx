@@ -3,13 +3,6 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://horeca-seo.vercel.app"),
   keywords: ["supply partners", "horeca", "restaurants", "bars", "hotels"],
-  alternates: {
-    canonical: '/',
-    languages: {
-      'ru-RU': '/ru',
-      'uz-UZ': '/uz',
-    },
-  },
   title: {
     default: "Supply Partners",
     template: "%s | Supply Partners",
