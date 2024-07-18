@@ -4,7 +4,17 @@ import { getMessages } from "next-intl/server";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Supply Partners",
+  metadataBase: new URL("https://horeca-seo.vercel.app"),
+  keywords: ["supply partners"],
+  title: {
+    default: "Supply Partners",
+    template: "%s | Supply Partners",
+  },
+  openGraph: {
+    description:
+      "Развивайте свой бизнес в HORECA с надежным партнером. Сделайте запрос уже сейчас и получите каталог с расценками на товары для заказа.",
+    images: ["https://horeca-seo.vercel.app/imgs/hero.png"],
+  },
   description: "Ваш деловой партнер",
 };
 
@@ -22,6 +32,9 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
+      <head>
+        <link rel="icon" href="/SP.png" />
+      </head>
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
