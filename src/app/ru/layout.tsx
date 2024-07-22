@@ -28,22 +28,18 @@ import { keywords } from "@/config/keyword";
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  params: {
-    locale: string;
-  };
 }
 
 export default async function RootLayout({
   children,
-  params: { locale },
 }: Readonly<RootLayoutProps>) {
   const messages = await getMessages();
   return (
-    <html lang={locale}>
+    <html lang="ru">
       <head>
         <link rel="icon" href="/SP.png" />
-        <link rel="alternate" hrefLang="ru" href="/ru" />
-        <link rel="alternate" hrefLang="uz" href="/uz" />
+        {/* <link rel="alternate" hrefLang="ru" href="/ru" />
+        <link rel="alternate" hrefLang="uz" href="/uz" /> */}
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
