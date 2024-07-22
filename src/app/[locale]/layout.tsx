@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-// import "../globals.css";
+import "./globals.css";
 import { keywords } from "@/config/keyword";
 
 // export const metadata: Metadata = {
@@ -28,16 +28,22 @@ import { keywords } from "@/config/keyword";
 
 interface RootLayoutProps {
   children: React.ReactNode;
+  params: {
+    locale: string;
+  };
 }
 
 export default async function RootLayout({
   children,
+  params: { locale },
 }: Readonly<RootLayoutProps>) {
   const messages = await getMessages();
   return (
-    <html lang="uz">
+    <html lang={locale}>
       <head>
         <link rel="icon" href="/SP.png" />
+        <link rel="alternate" hrefLang="ru" href="/ru" />
+        <link rel="alternate" hrefLang="uz" href="/uz" />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
