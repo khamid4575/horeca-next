@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import "./globals.css";
+import { keywords } from "@/config/keyword";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://horeca-seo.vercel.app"),
-  keywords: ["supply partners", "horeca", "restaurants", "hotels"],
+  // keywords,
   alternates: {
     canonical: "/",
     languages: {
