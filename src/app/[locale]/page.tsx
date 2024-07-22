@@ -10,28 +10,28 @@ import Services from "@/components/Services";
 import Shipping from "@/components/Shipping";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://horeca-seo.vercel.app"),
-  // keywords,
-  alternates: {
-    canonical: "/",
-    languages: {
-      ru: "/ru",
-      uz: "/uz",
-    },
-  },
-  title: {
-    default: "Supply Partners",
-    template: "%s | Supply Partners",
-  },
-  openGraph: {
-    description:
-      "Развивайте свой бизнес в HORECA с надежным партнером. Сделайте запрос уже сейчас и получите каталог с расценками на товары для заказа.",
-    images: ["https://horeca-seo.vercel.app/imgs/hero.png"],
-    siteName: "Supply Partners",
-  },
-  // description: "Ваш деловой партнер lom lom lom",
-};
+// export const metadata: Metadata = {
+//   metadataBase: new URL("https://horeca-seo.vercel.app"),
+//   // keywords,
+//   alternates: {
+//     canonical: "/",
+//     languages: {
+//       ru: "/ru",
+//       uz: "/uz",
+//     },
+//   },
+//   title: {
+//     default: "Supply Partners",
+//     template: "%s | Supply Partners",
+//   },
+//   openGraph: {
+//     description:
+//       "Развивайте свой бизнес в HORECA с надежным партнером. Сделайте запрос уже сейчас и получите каталог с расценками на товары для заказа.",
+//     images: ["https://horeca-seo.vercel.app/imgs/hero.png"],
+//     siteName: "Supply Partners",
+//   },
+//   // description: "Ваш деловой партнер lom lom lom",
+// };
 
 export default function Home() {
   return (
