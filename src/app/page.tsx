@@ -14,5 +14,5 @@ export const metadata: Metadata = {
   };
 
 export default function Home() {
-  redirect("/ru");
+  redirect("/uz");
 }
