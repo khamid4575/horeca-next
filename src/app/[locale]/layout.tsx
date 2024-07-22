@@ -42,8 +42,8 @@ export default async function RootLayout({
     <html lang={locale}>
       <head>
         <link rel="icon" href="/SP.png" />
-        <link rel="alternate" hrefLang="ru" href="/ru" />
-        <link rel="alternate" hrefLang="uz" href="/uz" />
+        <link rel="alternate" hrefLang="ru" href="https://horeca-seo.vercel.app/ru" />
+        <link rel="alternate" hrefLang="uz" href="https://horeca-seo.vercel.app/uz" />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
