@@ -45,12 +45,13 @@ const MobileNav = ({ isScrolled }: any) => {
 
   return (
     <div className="lg:hidden flex items-center justify-end z-30">
-      <i
+      {/* <i
         className={`bx bx-menu text-3xl w-full ${
           isScrolled ? "text-gray-900" : "text-white"
         }`}
-        onClick={handleSidebarToggle}
-      ></i>
+        
+      ></i> */}
+      <img src={isScrolled ? "/icons/menuBlack.svg": "/icons/menuWhite.svg"} alt="menu" className="w-8" onClick={handleSidebarToggle}/>
 
       {/* Sidebar */}
       <div
@@ -81,7 +82,7 @@ const MobileNav = ({ isScrolled }: any) => {
         <div className="flex justify-center items-center space-x-5">
           {icons.map((icon) => (
             <Link href={icon.href} key={icon.href} aria-label={icon.ariaLabel}>
-              <img src={icon.IconComponent} alt={icon.ariaLabel} />
+              <img src={icon.IconComponent} alt={icon.ariaLabel} className="w-8 h-8"/>
             </Link>
           ))}
         </div>

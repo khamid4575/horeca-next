@@ -32,7 +32,7 @@ const Hero = () => {
       >
         <img
           src={"/imgs/arrowDown.svg"}
-          alt=""
+          alt="hotels"
           className="w-14 h-14 2xl:w-16 2xl:h-16"
         />
       </a>

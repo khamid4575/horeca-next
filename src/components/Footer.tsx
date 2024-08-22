@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="my-3 flex justify-center items-center 2xl:w-[44%] lg:w-[62%] space-x-3">
             {icons.map((icon) => (
               <Link href={icon.href} key={icon.href} aria-label={icon.ariaLabel}>
-                <img src={icon.IconComponent} alt={icon.ariaLabel} />
+                <img src={icon.IconComponent} alt={icon.ariaLabel} className="w-8 h-8"/>
               </Link>
             ))}
           </div>
