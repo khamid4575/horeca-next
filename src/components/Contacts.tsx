@@ -151,7 +151,7 @@ const Contacts = () => {
           {t("contacts.address")}
         </h1>
         <p className="my-5">{t("contacts.locattion")}</p>
-        <p>+998 (71) 888-88-88</p>
+        <p>+998 (99) 920 88 00</p>
         <p className="my-5">order@supplypartners.uz</p>
         <h1 className="lg:text-3xl text-2xl font-bold">
           {t("contacts.workOur")}

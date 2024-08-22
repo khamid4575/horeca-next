@@ -7,6 +7,6 @@ export default function robot(): MetadataRoute.Robots {
       allow: ["/", "/ru", "/uz"],
       disallow: "/api/sendMessage",
     },
-    sitemap: "https://horeca-seo.vercel.app/sitemap.xml",
+    sitemap: "https://supplypartners.uz/sitemap.xml",
   };
 }

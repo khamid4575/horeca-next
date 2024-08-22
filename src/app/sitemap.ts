@@ -1,15 +1,15 @@
 export default async function sitemap() {
     return [
       {
-        url: "https://horeca-seo.vercel.app/",
+        url: "https://supplypartners.uz",
         lastModified: new Date(),
       },
       {
-        url: "https://horeca-seo.vercel.app/ru",
+        url: "https://supplypartners.uz/ru",
         lastModified: new Date(),
       },
       {
-        url: "https://horeca-seo.vercel.app/uz",
+        url: "https://supplypartners.uz/uz",
         lastModified: new Date(),
       },
     ];

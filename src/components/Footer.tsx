@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="flex 2xl:w-[1700px] lg:w-[1200px] lg:flex-row flex-col mx-auto lg:text-start text-center w-full">
         <div className="lg:w-2/5">
           <h1 className="lg:text-4xl text-3xl font-bold">
-            +998 (71) 888-88-88
+          +998 (99) 920 88 00
           </h1>
           <div className="my-3 flex justify-center items-center 2xl:w-[44%] lg:w-[62%] space-x-3">
             {icons.map((icon) => (
