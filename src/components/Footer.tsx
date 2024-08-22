@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
         <div className="lg:flex">
           <p className="lg:text-xl">
-            SUPPLY PARTNERS ̶ это ...добавить описание компании, миссию и цель.
+            SUPPLY PARTNERS ̶  {t("motto")}
           </p>
         </div>
       </div>

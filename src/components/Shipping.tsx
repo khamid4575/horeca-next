@@ -12,7 +12,7 @@ const Shipping = () => {
           </span>
         </h1>
         <p className="my-5">{t("shippingAndPayment.logistics")}</p>
-        <p>{t("shippingAndPayment.paymentMethods")}</p>
+        {/* <p>{t("shippingAndPayment.paymentMethods")}</p>
         <p className="my-5">
           {t("shippingAndPayment.cashPayment")}
           <br />
@@ -23,7 +23,7 @@ const Shipping = () => {
           {t("shippingAndPayment.cashlessPayments")}
           <br />
           {t("shippingAndPayment.visaAndMasterCard")}
-        </p>
+        </p> */}
       </div>
     </section>
   );
