@@ -14,7 +14,7 @@ const Hero = () => {
         <h1 className="2xl:text-5xl lg:text-4xl md:text-4xl text-2xl font-bold uppercase lg:w-2/5">
           {t("title")}
         </h1>
-        <p className="lg:text-2xl md:text-xl text-lg lg:mx-0 md:w-4/5 md:mx-auto 2xl:w-[45%] lg:w-1/2 text-white font-medium my-3">
+        <p className="lg:text-2xl md:text-xl text-[15px] lg:mx-0 md:w-4/5 md:mx-auto 2xl:w-[45%] lg:w-1/2 text-white font-medium my-3">
         {t("description")}
         </p>
         <a href={"#contacts"}>
