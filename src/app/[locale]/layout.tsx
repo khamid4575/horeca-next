@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://supplypartners.uz"),
   keywords,
   alternates: {
-    canonical: "https://supplypartners.uz",
+    canonical: "https://supplypartners.uz/ru",
     languages: {
       // ru: "https://supplypartners.uz/ru",
       uz: "https://supplypartners.uz/uz",
