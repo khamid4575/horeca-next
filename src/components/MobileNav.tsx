@@ -51,7 +51,7 @@ const MobileNav = ({ isScrolled }: any) => {
         }`}
         
       ></i> */}
-      <img src={isScrolled ? "/icons/menuBlack.svg": "/icons/menuWhite.svg"} alt="menu" className="w-8" onClick={handleSidebarToggle}/>
+      <img src={isScrolled ? "/icons/menuBlack.svg": "/icons/menuWhite.svg"} alt="menu" className="w-8 h-8" onClick={handleSidebarToggle}/>
 
       {/* Sidebar */}
       <div

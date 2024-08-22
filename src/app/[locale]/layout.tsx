@@ -60,6 +60,7 @@ export default async function RootLayout({
     <html lang={locale}>
       <head>
         <link rel="icon" href="/SP.png" />
+        <link rel="canonical" href="https://supplypartners.uz" />
         <link rel="alternate" hrefLang="ru" href="https://supplypartners.uz/ru" />
         <link rel="alternate" hrefLang="uz" href="https://supplypartners.uz/uz" />
       </head>
