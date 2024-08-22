@@ -27,6 +27,7 @@ const ScrollToTopIcon = () => {
           onClick={handleClick}
         >
           <i className="bx bx-chevron-up text-5xl text-gray-500"></i>
+          <img src="/icons/chevronUp.svg" alt="Up" />
         </div>
       )}
     </div>

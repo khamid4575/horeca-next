@@ -5,10 +5,10 @@ import "./globals.css";
 import { keywords } from "@/config/keyword";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://supplypartners.uz/"),
+  metadataBase: new URL("https://supplypartners.uz"),
   keywords,
   alternates: {
-    canonical: "https://supplypartners.uz/",
+    canonical: "https://supplypartners.uz",
     languages: {
       ru: "https://supplypartners.uz/ru",
       uz: "https://supplypartners.uz/uz",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Supply Partners - Партнер по продуктам HORECA",
-    url: "https://supplypartners.uz/",
+    url: "https://supplypartners.uz",
     siteName: "Supply Partners",
     description:
       "Развивайте свой бизнес в HORECA с надежным партнером. Сделайте запрос уже сейчас и получите каталог с расценками на товары для заказа.",
