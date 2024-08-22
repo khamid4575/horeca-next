@@ -3,14 +3,23 @@ import Link from "next/link";
 import React from "react";
 
 const icons = [
-  { href: "https://www.linkedin.com/", classname: "bx bxl-linkedin text-3xl", ariaLabel: "LinkedIn" },
-  { href: "https://www.facebook.com/", classname: "bx bxl-facebook text-3xl", ariaLabel: "Facebook" },
+  {
+    href: "https://www.linkedin.com/",
+    IconComponent: "/icons/facebook.svg",
+    ariaLabel: "LinkedIn",
+  },
+  {
+    href: "https://www.facebook.com/",
+    IconComponent: "/icons/instagram.svg",
+    ariaLabel: "Facebook",
+  },
   {
     href: "https://www.instagram.com/",
-    classname: "bx bxl-instagram text-3xl",
-    ariaLabel: "Instagram"
+    IconComponent: "/icons/linkedin.svg",
+    ariaLabel: "Instagram",
   },
 ];
+
 
 const Footer = () => {
   const t = useTranslations();
@@ -25,7 +34,7 @@ const Footer = () => {
           <div className="my-3 flex justify-center items-center 2xl:w-[44%] lg:w-[62%] space-x-3">
             {icons.map((icon) => (
               <Link href={icon.href} key={icon.href} aria-label={icon.ariaLabel}>
-                <i className={icon.classname}></i>
+                <img src={icon.IconComponent} alt={icon.ariaLabel} />
               </Link>
             ))}
           </div>

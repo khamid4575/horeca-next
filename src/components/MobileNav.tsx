@@ -6,12 +6,20 @@ import { useState } from "react";
 import LanguageSelector from "./customUI/LanguageSelector";
 
 const icons = [
-  { href: "https://www.linkedin.com/", classname: "bx bxl-linkedin text-3xl", ariaLabel: "LinkedIn" },
-  { href: "https://www.facebook.com/", classname: "bx bxl-facebook text-3xl", ariaLabel: "Facebook" },
+  {
+    href: "https://www.linkedin.com/",
+    IconComponent: "/icons/facebook.svg",
+    ariaLabel: "LinkedIn",
+  },
+  {
+    href: "https://www.facebook.com/",
+    IconComponent: "/icons/instagram.svg",
+    ariaLabel: "Facebook",
+  },
   {
     href: "https://www.instagram.com/",
-    classname: "bx bxl-instagram text-3xl",
-    ariaLabel: "Instagram"
+    IconComponent: "/icons/linkedin.svg",
+    ariaLabel: "Instagram",
   },
 ];
 
@@ -73,7 +81,7 @@ const MobileNav = ({ isScrolled }: any) => {
         <div className="flex justify-center items-center space-x-5">
           {icons.map((icon) => (
             <Link href={icon.href} key={icon.href} aria-label={icon.ariaLabel}>
-              <i className={icon.classname}></i>
+              <img src={icon.IconComponent} alt={icon.ariaLabel} />
             </Link>
           ))}
         </div>
