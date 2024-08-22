@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://supplypartners.uz",
     languages: {
-      ru: "https://supplypartners.uz/ru",
+      // ru: "https://supplypartners.uz/ru",
       uz: "https://supplypartners.uz/uz",
     },
   },
@@ -60,8 +60,8 @@ export default async function RootLayout({
     <html lang={locale}>
       <head>
         <link rel="icon" href="/SP.png" />
-        <link rel="canonical" href="https://supplypartners.uz" />
-        <link rel="alternate" hrefLang="ru" href="https://supplypartners.uz/ru" />
+        <link rel="canonical" href="https://supplypartners.uz/ru" />
+        {/* <link rel="alternate" hrefLang="ru" href="https://supplypartners.uz/ru" /> */}
         <link rel="alternate" hrefLang="uz" href="https://supplypartners.uz/uz" />
       </head>
       <body>
