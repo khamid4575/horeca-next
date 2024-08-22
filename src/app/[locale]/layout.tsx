@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Supply Partners",
     description:
       "Развивайте свой бизнес в HORECA с надежным партнером. Сделайте запрос уже сейчас и получите каталог с расценками на товары для заказа.",
-    images: ["https://www.supplypartners.uz/imgs/hero.png"],
+    images: ["https://supplypartners.uz/imgs/hero.png"],
     locale: "uz_UZ",
     type: "website",
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Supply Partners - Партнер по продуктам HORECA",
     description:
       "Развивайте свой бизнес в HORECA с надежным партнером. Сделайте запрос уже сейчас и получите каталог с расценками на товары для заказа.",
-    images: ["https://www.supplypartners.uz/imgs/hero.png"]
+    images: ["https://supplypartners.uz/imgs/hero.png"]
   },
   robots: {
     index: true,
