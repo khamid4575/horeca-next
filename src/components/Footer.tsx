@@ -29,9 +29,9 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="lg:flex">
+        <div className="lg:flex lg:w-2/4">
           <p className="lg:text-xl">
-            SUPPLY PARTNERS ̶  {t("motto")}
+            SUPPLY PARTNERS - {t("motto")}
           </p>
         </div>
       </div>
