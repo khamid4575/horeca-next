@@ -28,6 +28,7 @@ const Hero = () => {
       <a
         href="#hotels"
         className="absolute inset-x-0 hover:translate-y-3 rounded-full transition-all duration-300 w-20 h-20 bottom-3 text-white flex justify-center items-center mx-auto "
+      aria-label="Hotels section"
       >
         <img
           src={"/imgs/arrowDown.svg"}
