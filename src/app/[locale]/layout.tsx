@@ -61,42 +61,59 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
-      <Script
+        <Script
           id="local-business-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "name": "Supply Partners",
-              "image": [
+              name: "Supply Partners",
+              image: [
                 "https://heroca.vercel.app/assets/SP-C0iylDad.png",
                 "https://supplypartners.uz/imgs/hero.png",
-                "https://avatars.mds.yandex.net/get-altay/1871297/2a0000016be0b59a35820264318f54a4f6ca/XL" // add more images here
+                "https://avatars.mds.yandex.net/get-altay/1871297/2a0000016be0b59a35820264318f54a4f6ca/XL", // add more images here
               ],
-              "address": {
+              address: {
                 "@type": "PostalAddress",
-                "streetAddress": "Улица Бабура, 34",
-                "addressLocality": "Яккасарайский район",
-                "addressRegion": "Ташкент",
-                "postalCode": "100100",
-                "addressCountry": "UZ"
+                streetAddress: "Улица Бабура, 34",
+                addressLocality: "Яккасарайский район",
+                addressRegion: "Ташкент",
+                postalCode: "100100",
+                addressCountry: "UZ",
               },
-              "telephone": "+998999208800",
-              "openingHours": "Mo-Fr 09:00-18:00",
-              "geo": {
+              telephone: "+998999208800",
+              openingHours: "Mo-Fr 09:00-18:00",
+              geo: {
                 "@type": "GeoCoordinates",
-                "latitude": "41.288184",
-                "longitude": "69.251808"
+                latitude: "41.288184",
+                longitude: "69.251808",
               },
-              "url": "https://supplypartners.uz",
-              "sameAs": [
+              url: "https://supplypartners.uz",
+              sameAs: [
                 "https://www.facebook.com/supplypartners",
                 "https://x.com/supplypartners",
                 "https://instagram.com/supplypartners",
                 "https://t.me/supplypartners",
-              ]
-            })
+              ],
+              offers: [
+                {
+                  "@type": "Offer",
+                  name: "Консалтинг и сотрудничество в гостиничной сфере",
+                  url: "https://supplypartners.uz/ru#hotels",
+                },
+                {
+                  "@type": "Offer",
+                  name: "Консалтинг и сотрудничество в ресторанной сфере",
+                  url: "https://supplypartners.uz/ru#restaurants",
+                },
+                {
+                  "@type": "Offer",
+                  name: "Консалтинг и сотрудничество в сфере HORECA",
+                  url: "https://supplypartners.uz/ru#services",
+                },
+              ],
+            }),
           }}
         />
 
