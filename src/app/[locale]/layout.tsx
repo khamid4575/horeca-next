@@ -117,7 +117,7 @@ export default async function RootLayout({
           }}
         />
 
-        <link rel="icon" href="/SP.png" />
+        <link rel="icon" href="/imgs/SP.png" />
         <link rel="canonical" href="https://supplypartners.uz/ru" />
         {/* <link rel="alternate" hrefLang="ru" href="https://supplypartners.uz/ru" /> */}
         <link
