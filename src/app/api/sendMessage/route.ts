@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server';
 export async function POST(req: Request) {
   const { email, fullname, phoneNumber, message } = await req.json();
 
-  const text = `Email: ${email}\nFull Name: ${fullname}\nPhone Number: ${phoneNumber}\nMessage: ${message}`;
+  const text = `supplypartners.uz\n\nEmail: ${email}\nFull Name: ${fullname}\nPhone Number: ${phoneNumber}\nMessage: ${message}`;
 
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chatId = '-1002159191350';
